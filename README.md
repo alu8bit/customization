@@ -12,11 +12,16 @@ git clone https://github.com/alu8bit/customization.git
 
 ## Linux
 ### Aliases
-
 Make sure that this code appears in your ~/.bashrc file:
-
 ```bash 
-if [ -e $HOME/customization/linux/.bash_aliases ]; then
-    source $HOME/customization/linux/.bash_aliases
+if [ -f ~/customization/linux/.bash_aliases ]; then
+    source ~/customization/linux/.bash_aliases
+fi
+```
+### Git completion
+Make sure that this code appears in your ~/.bashrc file:
+```bash
+if [ -f ~/customization/linux/.git-completion.bash ]; then
+    source ~/customization/linux/.git-completion.bash
 fi
 ```
