@@ -19,6 +19,11 @@ alias apt-get='sudo apt-get'
 alias updatey='sudo apt-get --yes'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 
+# Display numbers in a human readable format
+alias df='df -h'
+alias du='du -h'
+alias free='free -h'
+
 # Others
 alias c='clear'
 
